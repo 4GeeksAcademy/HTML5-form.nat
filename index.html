@@ -16,10 +16,11 @@
     <div class="container p-5">
         <h2>Payment form example</h2>
         <div>
-            <form class="form-floating">
-                <input type="email" class="form-control is-invalid" id="floatingInputInvalid"
+            <form class="form-floating bg-danger text-danger">
+                <input type="text" class="form-control is-invalid" id="Error"
                     placeholder="name@example.com">
                 <label for="floatingInputInvalid">Some field are missing</label>
+
                 <!--CARD-CVC-AMOUNT-->
         </div>
         <div class="row p-2">
@@ -72,29 +73,43 @@
 
         <!--CARDS-->
         <h6>We accept:</h6>
-        <div class="form-check form-check-inline">
-            <i class="fa-brands fa-cc-mastercard"></i>
+        <div class="form-check form-check-inline mb-3">
+            <i class="fa-brands fa-cc-mastercard fa-lg"></i>
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
             <label class="form-check-label" for="inlineRadio1"></label>
         </div>
         <div class="form-check form-check-inline">
-            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-visa fa-lg"></i>
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
             <label class="form-check-label" for="inlineRadio2"></label>
         </div>
         <div class="form-check form-check-inline">
-            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-cc-paypal fa-lg"></i>
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
             <label class="form-check-label" for="inlineRadio3"></label>
         </div>
         <div class="form-check form-check-inline">
-            <i class="fa-brands fa-cc-apple-pay"></i>
+            <i class="fa-brands fa-cc-apple-pay fa-lg"></i>
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
             <label class="form-check-label" for="inlineRadio4"></label>
         </div>
 
+        <!--message-->
+        <div>
+        <fieldset class="row col-6">
+            <h6>Message</h6>
+            <div class="form-floating">
+                <textarea class="form-control " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+              </div>
+        </fieldset>
+         </div>
+
         <!--BOTON-->
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-5">
+            <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+            <button class="btn btn-primary" type="button">Send</button>
+          </div>
         </form>
 
         <!-- Scripts de JavaScript van al final del cuerpo para mejorar el rendimiento -->
